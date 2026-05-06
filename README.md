@@ -1,8 +1,14 @@
-# Plume RSS Reader
+# <img src="icon.svg" width="48" align="center"> Plume RSS Reader
 
 Plume is a modern, lightweight RSS reader for Android, designed to provide a focused and distraction-free reading experience. Whether you are catching up on tech news, blogs, or daily headlines, Plume brings all your favorite content into one clean interface.
 
-## ✨ Key Features
+## 📸 Screenshots
+
+<p align="center">
+  <img src="Main.png" width="300" title="Main Screen">
+</p>
+
+## Key Features
 
 - **Service Integration**: Supports **Feedly** and **TheOldReader** for seamless synchronization across devices.
 - **Read Anywhere**: Fully functional **Offline Mode**. Articles and images are cached so you can read even without an internet connection.
