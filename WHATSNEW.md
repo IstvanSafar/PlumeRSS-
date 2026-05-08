@@ -1,5 +1,13 @@
 ﻿# What's New in Plume
 
+**v1.4.3 - 2026-05-08**
+
+---
+
+- **Fix** Sync failed when pull down
+
+---
+
 **v1.4.0 - 2026-05-08**
 
 ---
