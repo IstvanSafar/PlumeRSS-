@@ -1,5 +1,15 @@
 ﻿# What's New in Plume
 
+**v1.4.0 - 2026-05-08**
+
+---
+
+- **New Feature**: **Global Search**. Search through all cached articles by keyword across all feeds.
+- **New Feature**: **Search FAB**. Quickly access search from the home screen via a dedicated floating button.
+- **New Feature**: **Dynamic FAB Placement**. Buttons move to the left side when 'Left-handed mode' is enabled for better ergonomics.
+
+---
+
 **v1.3.3 - 2026-05-08**
 
 ---
