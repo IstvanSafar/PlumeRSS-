@@ -1,5 +1,16 @@
 ﻿# What's New in Plume
 
+**v1.4.11 - 2026-05-10**
+
+---
+
+- **New Feature**: **YouTube Channel Discovery**. A new "▶ YouTube" tab in Discover shows popular channels by category (🇭🇺 Magyar, News, Tech, Gaming, Finance, and more), updated daily via GitHub Actions. Subscribe with a single tap.
+- **Fixed**: HTTP feeds (non-HTTPS) can now be added — the app was silently blocking them on Android 9+.
+- **Fixed**: Adding a feed now shows a proper error message if the URL is unreachable or the format is unsupported. Previously it failed silently.
+- **Fixed**: Version update check now correctly detects newer versions with double-digit patch numbers (e.g. 1.4.10 > 1.4.9).
+
+---
+
 **v1.4.10 - 2026-05-10**
 
 ---
