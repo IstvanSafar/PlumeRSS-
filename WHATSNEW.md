@@ -1,5 +1,14 @@
 ﻿# What's New in Plume
 
+**v1.4.12 - 2026-05-10**
+
+---
+
+- **Improved**: Battery usage reduced — podcast player polls position less frequently when paused, and the Discover dialog reuses a single HTTP connection pool instead of creating new ones per request.
+
+---
+
+
 **v1.4.11 - 2026-05-10**
 
 ---
