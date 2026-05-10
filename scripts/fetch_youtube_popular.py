@@ -1,6 +1,9 @@
 import os, json, requests
+from datetime import datetime, timezone
 
-API_KEY = os.environ["YOUTUBE_API_KEY"]
+API_KEY = os.environ.get("YOUTUBE_API_KEY", "").strip()
+if not API_KEY:
+    raise SystemExit("ERROR: YOUTUBE_API_KEY secret is not set or empty.")
 BASE = "https://www.googleapis.com/youtube/v3"
 
 CATEGORIES = [
@@ -14,9 +17,14 @@ CATEGORIES = [
     {"id": "EN_finance",  "label": "💼 Finance",           "query": "finance investing","lang": "en", "region": "US"},
 ]
 
+def yt_get(endpoint, params):
+    r = requests.get(f"{BASE}/{endpoint}", params={**params, "key": API_KEY})
+    if not r.ok:
+        raise requests.HTTPError(f"YouTube API error {r.status_code} on {endpoint}", response=r)
+    return r.json()
+
 def fetch_channels(query, lang, region, max_results=12):
-    # Search for channels
-    r = requests.get(f"{BASE}/search", params={
+    data = yt_get("search", {
         "part": "snippet",
         "type": "channel",
         "q": query,
@@ -24,23 +32,18 @@ def fetch_channels(query, lang, region, max_results=12):
         "regionCode": region,
         "maxResults": max_results,
         "order": "relevance",
-        "key": API_KEY,
     })
-    r.raise_for_status()
-    items = r.json().get("items", [])
+    items = data.get("items", [])
     if not items:
         return []
 
     channel_ids = [i["snippet"]["channelId"] for i in items]
 
-    # Get subscriber counts
-    r2 = requests.get(f"{BASE}/channels", params={
+    data2 = yt_get("channels", {
         "part": "snippet,statistics",
         "id": ",".join(channel_ids),
-        "key": API_KEY,
     })
-    r2.raise_for_status()
-    details = {c["id"]: c for c in r2.json().get("items", [])}
+    details = {c["id"]: c for c in data2.get("items", [])}
 
     results = []
     for cid in channel_ids:
@@ -61,7 +64,7 @@ def fetch_channels(query, lang, region, max_results=12):
     return results
 
 
-output = {"updated": __import__("datetime").datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"), "categories": []}
+output = {"updated": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), "categories": []}
 
 for cat in CATEGORIES:
     print(f"Fetching: {cat['label']} ...")
