@@ -1,5 +1,15 @@
 ﻿# What's New in Plume
 
+**v1.4.5 - 2026-05-10**
+
+---
+
+- **New Feature**: **Built-in Podcast Player**. Podcast episodes now play directly in the app — no external app needed. Includes play/pause, seek bar, –15s / +30s skip, and background playback with lock screen controls.
+- **New Feature**: **Podcast Discovery**. Tap "+" → "Discover / Popular" to browse the top podcasts by country (🇭🇺 HU, 🇺🇸 US, 🇬🇧 GB, and more) powered by the iTunes Charts. Search by keyword and subscribe with a single tap.
+- **New Feature**: **YouTube Link Handling**. Articles containing YouTube links now show a "Watch on YouTube" button. Preferred app (NewPipe, YouTube, or always ask) is configurable in Settings → Media.
+
+---
+
 **v1.4.4 - 2026-05-10**
 
 ---
