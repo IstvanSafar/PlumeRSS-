@@ -1,5 +1,13 @@
 ﻿# What's New in Plume
 
+**v1.4.9 - 2026-05-10**
+
+---
+
+- **Improved**: **RSS Feed Discovery**. The RSS feeds tab in Discover now includes a search powered by the Feedly API — find popular feeds worldwide by keyword, filtered by country/language. The curated list remains as the default view.
+
+---
+
 **v1.4.8 - 2026-05-10**
 
 ---
