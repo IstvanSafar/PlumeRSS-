@@ -1,5 +1,13 @@
 ﻿# What's New in Plume
 
+**v1.4.8 - 2026-05-10**
+
+---
+
+- **Fixed**: CDATA markers (`<![CDATA[...]]>`) no longer appear as visible text at the top of articles. The fix handles all casing variants and works for titles, descriptions, and encoded content fields.
+
+---
+
 **v1.4.7 - 2026-05-10**
 
 ---
