@@ -1,5 +1,13 @@
 ﻿# What's New in Plume
 
+**v1.5.0 - 2026-05-10**
+
+---
+
+- **Fixed**: Version update check now correctly detects newer versions — previously "1.4.9" was considered newer than "1.4.10" due to string comparison. All users on older versions will now be correctly notified of this and future updates.
+
+---
+
 **v1.4.12 - 2026-05-10**
 
 ---
