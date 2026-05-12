@@ -1,5 +1,14 @@
 ﻿# What's New in Plume
 
+**v1.5.4 - 2026-05-12**
+
+---
+
+- **Improved**: Discover dialog reordered — RSS feeds now appear first by default.
+- **Fixed**: Release script now correctly builds and packages the latest flavor-specific APK.
+
+---
+
 **v1.5.3 - 2026-05-12**
 
 ---
