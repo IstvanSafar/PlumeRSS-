@@ -1,5 +1,17 @@
 ﻿# What's New in Plume
 
+**v1.5.1 - 2026-05-12**
+
+---
+
+- **Fixed**: Podcast mini-player controls (play/pause, ±15/30s skip, stop, seek bar) moved from the article reader into `MainActivity` so the player stays visible while navigating — it no longer disappears when the user goes back.
+- **Fixed**: "Show all feeds" toggle now persists across app restarts — the setting was being reset to its default every time the app relaunched.
+- **Fixed**: CDATA markers (`<![CDATA[...]]>`) no longer appear in article or feed titles fetched from Feedly, TheOldReader, or local RSS feeds.
+- **Improved**: RSS/Podcast Discover — country selector now includes 22 languages (up from 7; added IT, PL, NL, PT, RO, CZ, SK, SE, DK, FI, NO, RU, UA, CN, BR). Category searches are now biased toward the selected language by appending a language keyword to the Feedly query. Changing the country while a custom search is active keeps the typed query; switching while the category view is shown reloads with localised terms.
+- **Improved**: Floating read all button
+
+---
+
 **v1.5.0 - 2026-05-10**
 
 ---
