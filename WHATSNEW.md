@@ -1,5 +1,15 @@
 ﻿# What's New in Plume
 
+**v1.5.5 - 2026-05-13**
+
+---
+
+- **Improved**: Podcast mini-player now features a dedicated 'X' close icon for easier dismissal.
+- **Fixed**: OPML Export now correctly exports subscriptions from the active service (Feedly, The Old Reader, or Local), fixing the issue where exports appeared empty.
+
+---
+
+
 **v1.5.4 - 2026-05-12**
 
 ---
