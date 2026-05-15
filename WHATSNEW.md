@@ -7,6 +7,18 @@
 - **Improved**: Relocated podcast mini-player close button to the top-right corner to prevent overlap with long episode titles.
 - **Improved**: Robustified version update check to correctly handle and ignore flavor suffixes (e.g., `-std`, `-auto`) during comparison.
 - **Fixed**: Resolved compilation errors in Settings where suspend functions were called outside of coroutines.
+-  * New Explore Randomly Mode: Discover new high-quality sources from around the world (BBC, Telex, El País, Le Monde, and
+     more) with a single tap. Perfect for language practice and breaking out of your filter bubble!
+   * Discovery Language Settings: Customize your exploration by selecting your preferred languages (English, Hungarian,
+     Spanish, French, German) in Settings.
+   * Dual Shuffle Feature:
+       * Global Shuffle: Get a random article from all your subscriptions.
+       * Contextual Shuffle: Feeling focused? Get a random article from a specific feed or category.
+   * OPML Support for Desktop: Windows users can now easily import and export their feed collections.
+   * Improved Android Widget: Fixed data loading issues and optimized refresh logic for a more reliable home screen
+     experience.
+   * Performance & Stability: Fixed several navigation bugs and improved article rendering speed.
+
 
 ---
 
