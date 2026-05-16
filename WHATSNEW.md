@@ -1,5 +1,17 @@
 ﻿# What's New in Plume
 
+**v1.5.7 - 2026-05-16**
+
+---
+
+- **New Feature**: **Auto-fetch Full Articles**. Plume can now automatically download full content from source websites if the RSS feed only provides summaries. Configurable in Settings.
+- **New Feature**: **Explore Randomly Mode**. Discover high-quality international news and tech sources (BBC, Telex, El País, Le Monde, etc.) with a single tap.
+- **Improved**: **Robust Synchronization**. The sync engine now handles parsing errors gracefully; a single broken feed will no longer stall the entire update process.
+- **Improved**: **Ad & Clutter Removal**. Upgraded the extraction engine for cleaner, distraction-free full-text reading.
+
+---
+
+
 **v1.5.6 - 2026-05-15**
 
 ---
