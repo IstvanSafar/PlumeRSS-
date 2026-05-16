@@ -1,5 +1,14 @@
 ﻿# What's New in Plume
 
+**v1.5.11 - 2026-05-16**
+
+---
+
+* Fetch Full Article - remove ads show only text
+
+---
+
+
 **v1.5.10 - 2026-05-16**
 
 ---
